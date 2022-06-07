@@ -1,0 +1,9 @@
+{
+	"name": "SamiullahRaziDataFactory",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "516edcd4-e805-49be-9680-cdbf863577c5",
+		"tenantId": "d988180a-487c-497e-b3d8-ee0146495fcb"
+	}
+}

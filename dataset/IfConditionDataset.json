@@ -1,0 +1,27 @@
+{
+	"name": "IfConditionDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SamiullahADFStorageLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"EnterOutputFileName1": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": {
+					"value": "@dataset().EnterOutputFileName1",
+					"type": "Expression"
+				},
+				"container": "adfcontainer"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

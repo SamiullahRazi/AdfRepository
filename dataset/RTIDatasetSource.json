@@ -1,0 +1,20 @@
+{
+	"name": "RTIDatasetSource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SamiullahADFStorageLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "RTI format.txt",
+				"folderPath": "InputFile",
+				"container": "adfcontainer"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

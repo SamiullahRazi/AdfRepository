@@ -1,0 +1,19 @@
+{
+	"name": "EventBasedCopyDataTrigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/adfcontainer/blobs/InputFile/",
+			"blobPathEndsWith": ".txt",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/84b6574d-4694-44e9-9cc4-6f0978c77dd8/resourceGroups/ADFResourceGroup/providers/Microsoft.Storage/storageAccounts/samiullahadfstorage",
+			"events": [
+				"Microsoft.Storage.BlobCreated",
+				"Microsoft.Storage.BlobDeleted"
+			]
+		}
+	}
+}
